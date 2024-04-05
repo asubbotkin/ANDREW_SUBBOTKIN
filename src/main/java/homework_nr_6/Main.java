@@ -66,9 +66,9 @@ public class Main {
         System.out.println();
 
 
-//        System.out.println("---------------");
-//        myDate1.setDay(24);
-//        System.out.println();
-//        myDate2.setMonth(13);
+        System.out.println("---------------");
+        myDate1.setDay(24);
+        System.out.println();
+        myDate2.setMonth(13);
     }
 }
