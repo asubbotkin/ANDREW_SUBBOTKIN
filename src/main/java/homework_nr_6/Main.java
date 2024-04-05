@@ -2,9 +2,7 @@ package homework_nr_6;
 
 import test.Date;
 import test.Employee;
-import test.Invioce;
 
-import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
