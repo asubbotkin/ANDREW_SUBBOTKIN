@@ -12,12 +12,13 @@ public class Manager extends Employee{
 
     @Override
     public void printMyName() {
-        System.out.println(name + " " + surname);
+        System.out.println(name + " " + surname + ".");
     }
 
     @Override
     public void works() {
-        System.out.println("Manager " + name + " " + surname + " works!");
+        System.out.println("Works in " + companyName + " as " + teamName + " manager.");
+//        System.out.println(name + " " + surname + " works in " + companyName + " as " + teamName + " manager.");
     }
 
     public int getTeamSize() {
