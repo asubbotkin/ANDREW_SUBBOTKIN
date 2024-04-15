@@ -18,7 +18,6 @@ public class Programmer extends Employee{
     @Override
     public void works() {
         System.out.println("Works in " + companyName + " as " + programmingLanguage + " programmer.");
-//        System.out.println(name + " " + surname + "  works in " + companyName + " as " + programmingLanguage + " programmer.");
     }
 
     public String getProgrammingLanguage() {

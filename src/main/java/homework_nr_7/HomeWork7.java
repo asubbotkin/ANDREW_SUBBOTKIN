@@ -42,7 +42,6 @@ public class HomeWork7 {
         manager3.works();
 
         System.out.println("---------Managers------------");
-//        for eahc loop with instance Manager
         Person[] personsArray = new Person[]{
                 pensioned1, pensioned2, programmer1, programmer2, programmer3, manager1, manager2, manager3
         };
