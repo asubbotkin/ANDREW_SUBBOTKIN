@@ -3,7 +3,6 @@ package homework_nr_8;
 import java.util.*;
 
 public class HomeWork8 {
-//    Function noDuplicates receives List of String as a parameter and returns Set(without duplicates)
     private static Set<String> noDuplicates(List<String> list) {
         Set<String> returned = new HashSet<>();
         for (String s : list) {
@@ -29,9 +28,6 @@ public class HomeWork8 {
         System.out.println("------------To do list for today--------------");
         System.out.println(todoList);
         System.out.println("----------------------------------------------");
-//        for (String s : todoList) {
-//            System.out.println(s);
-//        }
         printingTodos(todoList);
 
 
@@ -45,13 +41,8 @@ public class HomeWork8 {
         entireData.add("DDD");
         entireData.add("CCC");
 
-//        String nume =null;
-//
-//        if("Big".equals(nume)){
-
         System.out.println(noDuplicates(entireData));
 
-//        Using Map
         System.out.println("---------------Vocabulary-----------------------");
 
         Map<String, String> vocabulary = new HashMap<>();
