@@ -1,7 +1,5 @@
 package homework_nr_6;
 
-import test.Date;
-import test.Employee;
 
 
 public class Main {
