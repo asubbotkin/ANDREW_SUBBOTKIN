@@ -12,4 +12,30 @@ public class Person {
         this.age = age;
         this.isMale = isMale;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public boolean isMale() {
+        return isMale;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", age=" + age +
+                ", isMale=" + isMale +
+                '}';
+    }
 }
