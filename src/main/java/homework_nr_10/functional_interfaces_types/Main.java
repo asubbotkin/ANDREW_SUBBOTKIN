@@ -1,4 +1,4 @@
-package homework_nr_10.part_1;
+package homework_nr_10.functional_interfaces_types;
 
 public class Main {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class Main {
         System.out.println("--------------------------------------");
 
         Predicate checkOdd = (int x) -> {
-          return (x % 2 == 0) ? true : false;
+            return (x % 2 == 0) ? true : false;
         };
 
         Consumer print = (String x) -> {
@@ -16,7 +16,7 @@ public class Main {
         };
 
         Function multiply = (int x) -> {
-          return x * 2;
+            return x * 2;
         };
 
         Supplier someNumber = () -> {
