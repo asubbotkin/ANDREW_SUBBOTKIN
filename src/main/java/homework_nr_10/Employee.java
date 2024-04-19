@@ -1,4 +1,4 @@
-package homework_nr_10.testing_employee;
+package homework_nr_10;
 
 public class Employee {
     String name;

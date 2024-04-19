@@ -1,7 +1,38 @@
-package homework_nr_10.testing_employee;
+package homework_nr_10;
+
+import java.util.function.Consumer;
+import java.util.function.Function;
+import java.util.function.Predicate;
+import java.util.function.Supplier;
 
 public class Main {
     public static void main(String[] args) {
+
+        int testable = 5;
+        String testString = "Print me!";
+        System.out.println("--------------------------------------");
+
+        Predicate<Integer> checkOdd = (Integer x) -> {
+            return x % 2 == 0;
+        };
+
+        Consumer<String> printConsumerResult = (String x) -> {
+            System.out.println(x);
+        };
+
+        Function<Integer, Integer> multiply = (Integer x) -> {
+            return x * 2;
+        };
+
+        Supplier<Double> someNumber = () -> {
+            return (Math.random() * 100);
+        };
+        System.out.println(checkOdd.test(testable));
+        System.out.println(multiply.apply(testable));
+        printConsumerResult.accept(testString);
+        System.out.println(someNumber.get());
+        System.out.println("--------------------------------------");
+
 
         Employee objectEmployee1 = new Employee("Alexei", "Ivanov", 25, "Software Engineering");
         Employee objectEmployee2 = new Employee("Nikolai", "Petrov", 29, "Software Testing");
@@ -41,4 +72,6 @@ public class Main {
     public static void testEmployee(Employee employee, Testing algorithm) {
         System.out.println(algorithm.checkEmployee(employee));
     }
+
 }
+
