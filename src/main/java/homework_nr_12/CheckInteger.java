@@ -8,7 +8,7 @@ public enum CheckInteger {
     CHECK_IF_NEGATIVE((x) -> x < 0),
     CHECK_IF_POSITIVE((x) -> x > 0);
 
-    public Predicate<Integer> algorithm;
+    final Predicate<Integer> algorithm;
 
     CheckInteger(Predicate<Integer> algorithm) {
         this.algorithm = algorithm;

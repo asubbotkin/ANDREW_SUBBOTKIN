@@ -29,12 +29,11 @@ public class HomeWork12 {
         System.out.println("------------Check integer-------------------");
 
         int x = 25;
-        int y = -12;
 
         System.out.println(CheckInteger.CHECK_IF_EVEN.algorithm.test(x));
         System.out.println(CheckInteger.CHECK_IF_POSITIVE.algorithm.test(x));
-        System.out.println(CheckInteger.CHECK_IF_ODD.algorithm.test(y));
-        System.out.println(CheckInteger.CHECK_IF_NEGATIVE.algorithm.test(y));
+        System.out.println(CheckInteger.CHECK_IF_ODD.algorithm.test(x));
+        System.out.println(CheckInteger.CHECK_IF_NEGATIVE.algorithm.test(x));
 
         System.out.println("-------------------------------------------");
 
@@ -42,9 +41,13 @@ public class HomeWork12 {
         for(int i = 0; i < checkIntegers.length; i++){
             checkIntegerAndPrintResult(x, checkIntegers[i]);
         }
+
         System.out.println("--------------------------------------------");
+
+        x = -12;
+
         for(int i = 0; i < checkIntegers.length; i++){
-            checkIntegerAndPrintResult(y, checkIntegers[i]);
+            checkIntegerAndPrintResult(x, checkIntegers[i]);
         }
     }
 

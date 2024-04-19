@@ -10,7 +10,7 @@ public enum FuelType {
     PROPANE(true),
     ELECTRIC(false);
 
-    public boolean isFuelLiquid;
+    final boolean isFuelLiquid;
 
     FuelType(boolean isFuelLiquidLiquid) {
         this.isFuelLiquid = isFuelLiquidLiquid;
