@@ -9,5 +9,8 @@ public class Main {
         System.out.println("This is my 5-th homework");
         System.out.println("This is my 6-th homework");
         System.out.println("This is my 8-th homework");
+        System.out.println("This is my 9-th homework");
+        System.out.println("This is my 10-th homework");
+        System.out.println("This is my 11-th homework");
     }
 }
