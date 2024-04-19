@@ -14,6 +14,7 @@ public class HomeWork9 {
         elephantObject1.whatItDo();
         elephantObject1.whereItLives();
         System.out.println("---------------------------------------");
+        System.out.println("---------------------------------------");
 
     }
 }
