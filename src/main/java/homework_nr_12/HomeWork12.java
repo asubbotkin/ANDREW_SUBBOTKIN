@@ -17,14 +17,11 @@ public class HomeWork12 {
 
         System.out.println(FuelType.DIESEL_51.isFuelLiquid);
 
-        FuelType.isLiquid(FuelType.DIESEL_51);
-        FuelType.isLiquid(FuelType.ELECTRIC);
-        FuelType.isLiquid(FuelType.PETROL_95);
-        FuelType.isLiquid(FuelType.PETROL_98);
-        FuelType.isLiquid(FuelType.PETROL_100);
-        FuelType.isLiquid(FuelType.DIESEL_55);
-        FuelType.isLiquid(FuelType.METAN);
-        FuelType.isLiquid(FuelType.PROPANE);
+        FuelType fuel1 = FuelType.PETROL_95;
+        FuelType fuel2 = FuelType.PETROL_98;
+        FuelType fuel3 = FuelType.PETROL_100;
+        FuelType fuel4 = FuelType.ELECTRIC;
+
 
         System.out.println("------------Check integer-------------------");
 

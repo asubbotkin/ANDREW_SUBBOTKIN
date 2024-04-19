@@ -16,7 +16,7 @@ public enum FuelType {
         this.isFuelLiquid = isFuelLiquidLiquid;
     }
 
-    public static void isLiquid(FuelType fuel){
-        System.out.println(fuel.name() + "->" + fuel.isFuelLiquid);
+    public void isLiquid(){
+        System.out.println(this.name() + "->" + this.isFuelLiquid);
     }
 }
