@@ -13,6 +13,7 @@ public class HomeWork9 {
         Erbivor elephantObject1 = new Elephant(5, 6, 60, 6000);
         elephantObject1.whatItDo();
         elephantObject1.whereItLives();
+        System.out.println("---------------------------------------");
 
     }
 }
