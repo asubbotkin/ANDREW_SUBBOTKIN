@@ -15,12 +15,15 @@ public class HomeWork12 {
 
         System.out.println("-------------Fuel Types---------------------");
 
-        System.out.println(FuelType.DIESEL_51.isFuelLiquid);
-
         FuelType fuel1 = FuelType.PETROL_95;
         FuelType fuel2 = FuelType.PETROL_98;
         FuelType fuel3 = FuelType.PETROL_100;
         FuelType fuel4 = FuelType.ELECTRIC;
+
+        fuel1.isLiquid();
+        fuel2.isLiquid();
+        fuel3.isLiquid();
+        fuel4.isLiquid();
 
 
         System.out.println("------------Check integer-------------------");
