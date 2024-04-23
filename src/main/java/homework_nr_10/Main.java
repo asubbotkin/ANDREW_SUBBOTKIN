@@ -69,9 +69,8 @@ public class Main {
 
     }
 
-    public static void testEmployee(Employee employee, Testing algorithm) {
-        System.out.println(algorithm.checkEmployee(employee));
+    public static void testEmployee(Employee employee, Predicate<Employee> algorithm) {
+        System.out.println(algorithm.test(employee));
     }
-
 }
 
