@@ -68,7 +68,7 @@ public class Main {
         });
 
     }
-
+    // Used Predicate
     public static void testEmployee(Employee employee, Predicate<Employee> algorithm) {
         System.out.println(algorithm.test(employee));
     }
