@@ -1,7 +1,5 @@
 package homework_nr_15;
 
-import java.util.Comparator;
-
 public class Car implements Comparable<Car>{
     protected String name;
     protected int yearMade;

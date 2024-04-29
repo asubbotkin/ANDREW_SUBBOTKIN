@@ -29,7 +29,7 @@ public class HomeWork15 {
 
 
         System.out.println("------Sorted by Name----------");
-        carList1.stream()
+        carList2.stream()
                 .sorted((o1, o2) -> {
                     return Comparator.comparing((Car e) -> e.name)
                             .compare(o1, o2);
@@ -37,7 +37,7 @@ public class HomeWork15 {
                 .forEach(e -> System.out.println(e));
 
         System.out.println("------Sorted by Name reversed----------");
-        carList1.stream()
+        carList2.stream()
                 .sorted((o1, o2) -> {
                     return Comparator.comparing((Car e) -> e.name)
                             .reversed()
