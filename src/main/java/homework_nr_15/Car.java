@@ -1,5 +1,7 @@
 package homework_nr_15;
 
+import java.util.Comparator;
+
 public class Car implements Comparable<Car>{
     protected String name;
     protected int yearMade;
@@ -19,6 +21,7 @@ public class Car implements Comparable<Car>{
 
     @Override
     public int compareTo(Car o) {
-        return 0;
+         return Integer.compare(this.yearMade, o.yearMade);
     }
+
 }
