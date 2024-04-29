@@ -1,5 +1,9 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello and welcome!");
@@ -15,5 +19,10 @@ public class Main {
         System.out.println("This is my 12-th homework");
         System.out.println("This is my 13-th homework");
         System.out.println("This is my 14-th homework");
+
+        List<House>  houseList = new ArrayList<>(Arrays.asList(
+                new House(100, 200000, "Paris", true),
+                new House(80, 140000, "Tokio", false)
+        ));
     }
 }
