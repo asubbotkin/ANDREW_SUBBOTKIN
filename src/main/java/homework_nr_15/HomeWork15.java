@@ -13,20 +13,10 @@ public class HomeWork15 {
 
         TreeSet<Car> carList2 = new TreeSet<>(Arrays.asList(car1, car2, car3, car4));
 
-        System.out.println("-------Sorted by year------");
+        System.out.println("-------Sorted by year reverse------");
         carList1.stream()
                 .sorted()
                 .forEach(e -> System.out.println(e));
-
-        System.out.println("-------Sorted by year reverse------");
-        carList1.stream()
-                .sorted((o1, o2) -> {
-                    return Comparator.comparing((Car e) -> e.yearMade)
-                            .reversed()
-                            .compare(o1, o2);
-                })
-                .forEach(e -> System.out.println(e));
-
 
         System.out.println("------Sorted by Name----------");
         carList2.stream()
