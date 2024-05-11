@@ -19,6 +19,8 @@ public class Main {
         System.out.println("This is my 12-th homework");
         System.out.println("This is my 13-th homework");
         System.out.println("This is my 14-th homework");
+        System.out.println("This is my 15-th homework");
+        System.out.println("This is my 16-th homework");
 
         List<House>  houseList = new ArrayList<>(Arrays.asList(
                 new House(100, 200000, "Paris", true),
