@@ -3,6 +3,7 @@ package homework_nr_16;
 public class Person {
     private String name;
     private int age;
+    private double rating;
 
     public Person(String name, int age, double rating) {
         this.name = name;
@@ -10,9 +11,19 @@ public class Person {
         this.rating = rating;
     }
 
-    private double rating;
 
+    @Override
+    public String toString() {
+        return "Person{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", rating=" + rating +
+                '}';
+    }
 
+    public String getName() {
+        return name;
+    }
 
     public void setName(String name) {
         this.name = name;
