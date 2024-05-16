@@ -23,9 +23,9 @@ public class Main {
         System.out.println("This is my 16-th homework");
         System.out.println("This is my 17-th homework");
 
-        List<House>  houseList = new ArrayList<>(Arrays.asList(
-                new House(100, 200000, "Paris", true),
-                new House(80, 140000, "Tokio", false)
-        ));
+//        List<House>  houseList = new ArrayList<>(Arrays.asList(
+//                new House(100, 200000, "Paris", true),
+//                new House(80, 140000, "Tokio", false)
+//        ));
     }
 }
