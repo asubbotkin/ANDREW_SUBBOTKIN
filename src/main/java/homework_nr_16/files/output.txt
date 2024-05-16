@@ -1,0 +1,4 @@
+
+Average rating is: 84.3
+The youngest person is: Bob(Age: 22)
+The oldest person is: Eve(Age: 30)
