@@ -42,7 +42,7 @@ public class HomeWork17 {
             System.out.println(color + i + " " + Thread.currentThread().getName());
         }
     }
-    public static synchronized void printHello(String color){
+    public static void printHello(String color){
         System.out.println(color + Thread.currentThread().getName() + " is going to sleep!");
             try {
                 Thread.sleep(5000);
