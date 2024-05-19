@@ -1,19 +1,39 @@
 package homework_nr_18;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 
 public class HomeWork18 {
     public static void main(String[] args) {
-//        "Have a coffee", "Go to job", "Go to the gym", "Meet friends"
-        List<String> tasksList;
+//
+        List<String> tasksList = new ArrayList<>(Arrays.asList("Have a coffee", "To go to the job", "To  go to the gym", "Meet friends"));
         TaskManager taskManagerObject = new TaskManager(new LinkedList<>());
 
-        taskManagerObject.addTask("");
+        LinkedList<String> clonedList;
+
+        Runnable addTask = () ->  {
+            for (String task : tasksList) {
+                taskManagerObject.addTask(task);
+            }
+        };
+
+        Runnable removeTask = () -> {
+            taskManagerObject.removeTask(1);
+        };
+
+        Runnable getTasksCount = taskManagerObject::getTasksCount;
+
+        Runnable cloneTasksList = () -> {
+//            taskManagerObject.cloneTasksList();
+        };
+
+
+
         taskManagerObject.getAllTasks();
 
         System.out.println("-----------------------");
-        taskManagerObject.removeTask(1);
         taskManagerObject.getAllTasks();
 
         System.out.println("-----------------------");
@@ -21,7 +41,6 @@ public class HomeWork18 {
         taskManagerObject.getAllTasks();
 
         System.out.println("-----Cloned---------------");
-        LinkedList<String> clonedList = taskManagerObject.cloneTasksList();
 
         for (String task : clonedList) {
             System.out.println(task);
