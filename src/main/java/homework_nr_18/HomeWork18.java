@@ -26,15 +26,31 @@ public class HomeWork18 {
         FutureTask<LinkedList<String>> getClonedTaskList = new FutureTask<>(cloneTasksList);
 
 
-        Thread addTaskThread = new Thread(addTask);
-        Thread removeTaskThread = new Thread(removeTask);
-        Thread getTasksCountThread = new Thread(getTasksCount);
-        Thread cloneTasksListThread = new Thread(getClonedTaskList);
+//      Creating and running threads V.1
 
-        removeTaskThread.start();
-        addTaskThread.start();
-        getTasksCountThread.start();
-        cloneTasksListThread.start();
+        List<Thread> threadsList = new ArrayList<>(Arrays.asList(
+            new Thread(addTask),
+            new Thread(removeTask),
+            new Thread(getTasksCount),
+            new Thread(getClonedTaskList)
+        ));
+
+        for (Thread thread : threadsList) {
+            thread.start();
+        }
+
+//      Creating and running threads V.2
+
+//        Thread addTaskThread = new Thread(addTask);
+//        Thread removeTaskThread = new Thread(removeTask);
+//        Thread getTasksCountThread = new Thread(getTasksCount);
+//        Thread cloneTasksListThread = new Thread(getClonedTaskList);
+//        threadsList.add(addTaskThread);
+//
+//        removeTaskThread.start();
+//        addTaskThread.start();
+//        getTasksCountThread.start();
+//        cloneTasksListThread.start();
 
         try {
             int count = getTasksCount.get();

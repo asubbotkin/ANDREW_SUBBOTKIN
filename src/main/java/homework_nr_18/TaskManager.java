@@ -41,16 +41,6 @@ public class TaskManager {
         return this.tasksList.size();
     }
 
-    public synchronized void getAllTasks() {
-        try {
-            System.out.println("Getting tasks list...");
-            Thread.sleep(30);
-            for (String task : tasksList) System.out.println(task);
-        } catch (InterruptedException e) {
-            System.out.println("Error getting tasks list!");
-        }
-    }
-
     public synchronized LinkedList<String> cloneTasksList() {
         try {
             System.out.println("Clone tasks list...");
