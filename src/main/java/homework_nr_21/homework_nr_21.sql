@@ -4,8 +4,8 @@ create table departments(
 )
 
 insert into departments (name)
-values ('Software ingeneering'),
-	('Hardware ingeneering'),
+values ('Software engineering'),
+	('Hardware engineering'),
 	('Testing software'),
 	('Accounting')
 
@@ -13,7 +13,7 @@ create table employees (
     employee_id serial primary key,
     employee_name text not null,
     fk_department_id int,
-    constraint fk_depertment
+    constraint fk_department
     foreign key (fk_department_id)
     references departments(department_id)
 )
@@ -79,12 +79,12 @@ from employees e
 inner join employee_projects ep on employee_id = fk_employee_id
 inner join projects p on fk_project_id = project_id
 
--- d. All employees and without departmets too
+-- d. All employees and without departments too
 select e.employee_name, d.name
 from departments d
 full outer join employees e on department_id = fk_department_id
 
--- c. Count of emplyees in every department
+-- c. Count of employees in every department
 select d."name", count(e.fk_department_id)
 from departments d
 inner join employees e on department_id = fk_department_id
